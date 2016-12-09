@@ -39,3 +39,14 @@ group :production do
   gem 'rails_12factor', '0.0.2'
   gem 'puma',           '2.11.1'
 end
+
+group :production, :staging do
+  gem 'unicorn'
+end
+group :development do
+  gem 'capistrano', '~> 3.2.1'
+  gem 'capistrano-rails',   '~> 1.1', require: false
+  gem 'capistrano-bundler', '~> 1.1', require: false
+  gem 'capistrano-rbenv', '~> 2.0', require: false
+  gem 'capistrano3-unicorn'
+end
