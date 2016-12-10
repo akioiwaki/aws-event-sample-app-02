@@ -2,9 +2,9 @@
 production:
   <<: *default
   adapter: postgresql
-  encoding: utf8
+  encoding: unicode
   pool: 5
   timeout: 5000
   
   producution:
-  database: glacial-anchorage-70269_producution
+  database: aws-event-sample-app_producution
