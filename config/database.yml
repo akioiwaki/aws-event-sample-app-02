@@ -1,9 +1,6 @@
 #ここをEC2のサーバー側で作ったMysqlのユーザー名、パスワード、ホスト名を書く
 production:
-  adapter: mysql2
+  <<: *default
+  adapter: postgresql
   encoding: utf8
   pool: 5
-  username: EC2で作ったmysqlユーザー
-  password: EC2で作ったユーザーのパスワード
-  host: EC2のElasticIP
-  database: あなたが作ったデータベース名
