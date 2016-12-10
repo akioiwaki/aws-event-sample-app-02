@@ -4,3 +4,7 @@ production:
   adapter: postgresql
   encoding: utf8
   pool: 5
+  timeout: 5000
+  
+  producution:
+  database: aws-event-sample-app_producution
