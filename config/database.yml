@@ -18,7 +18,8 @@ test:
 production:
   <<: *default
   adapter: postgresql 
+  database: aws-event-sample-app_producution
   encoding: utf8
   pool: 5
   timeout: 5000
-  database: aws-event-sample-app_producution
+
