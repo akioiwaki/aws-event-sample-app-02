@@ -22,6 +22,7 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem 'net-ssh'
 
 group :development, :test do
+  
   gem 'pry-rails'
   gem 'sqlite3',     '1.3.11'
   gem 'byebug',      '3.4.0'
