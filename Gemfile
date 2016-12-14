@@ -40,4 +40,8 @@ end
 group :production do
   gem 'pg'       
   gem 'rails_12factor'
+  
+  
+  source "https://rubygems.org"
+  ruby  "2.3.0"
 end
