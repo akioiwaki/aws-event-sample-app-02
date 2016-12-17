@@ -23,11 +23,10 @@ test:
 
 #ここをEC2のサーバー側で作ったMysqlのユーザー名、パスワード、ホスト名を書く
 production:
-  <<: *default
-  adapter: postgresql 
+  adapter: mysql2
   encoding: utf8
   pool: 5
-  timeout: 5000
-  
-  producution:
-  database: aws-event-sample-app_producution
+  username: akiowaki
+  password: 新しいパスワード
+  host: 52.196.73.82
+  database: %

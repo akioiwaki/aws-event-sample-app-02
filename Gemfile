@@ -37,12 +37,13 @@ group :test do
   gem 'guard-minitest',     '2.3.1'
 end
 
-group :production do
-  gem 'pg'       
-  gem 'rails_12factor'
-  gem 'puma'
-  
-  
-  source "https://rubygems.org"
-  ruby  "2.3.0"
+group :production, :staging do
+  gem 'unicorn'
+end
+group :development do
+  gem 'capistrano', '~> 3.2.1'
+  gem 'capistrano-rails',   '~> 1.1', require: false
+  gem 'capistrano-bundler', '~> 1.1', require: false
+  gem 'capistrano-rbenv', '~> 2.0', require: false
+  gem 'capistrano3-unicorn'
 end

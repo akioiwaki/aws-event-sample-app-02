@@ -1,7 +1,7 @@
 application = 'reserve-hacker'
 
 worker_processes 2 #EC2のインスタンスのCPU数より少し大きく
-app_path = "/var/www/EC2で作ったディレクトリ名"
+app_path = "/var/www/aws-event-sample"
 #標準だとsharedに作成される
 #ここが一番重要
 #Nginxのupstreamで設定した「server unix:/var/www/あなたのアプリ名/shared/tmp/sockets/unicorn.sock」の場所と合わせる！！
